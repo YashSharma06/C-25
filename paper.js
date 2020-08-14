@@ -14,10 +14,7 @@ class PaperBall {
     display(){
         
         var pos = this.body.position;
-        push ();
-        translate(pos.x, pos.y);
         imageMode(CENTER);
-        image(this.image, 0, 0, 70, 70);
-        pop ();
+        image(this.image, pos.x, pos.y, 70, 70);
     }
 }
